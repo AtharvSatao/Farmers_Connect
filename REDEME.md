@@ -9,10 +9,8 @@ The **Farmer-to-Consumer Connection Platform** is a full-stack web application d
 ## 📌 Key Features of FCCP
 
 - Role-based authentication (Farmer & Consumer)
-- Farmer Dashboard for adding, updating, and managing product listings
 - Consumer Dashboard for browsing and purchasing products
 - Shopping cart and order system
-- Product management with images, prices, and descriptions
 - Contact and feedback form
 - Secure database handling using MySQL
 
@@ -35,7 +33,6 @@ The **Smart Crop Suggestion Platform** is an advanced extension of FCCP that int
 - Shows **best crop + top 2–3 alternative crops**
 - Real-time PHP → Python communication using `shell_exec()`
 - Simple, user-friendly input form for crop suggestions
-- Optional SMS alerts using Twilio API
 
 ## 🔬 Machine Learning Details
 
