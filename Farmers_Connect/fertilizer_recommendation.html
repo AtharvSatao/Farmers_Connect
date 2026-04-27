@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Fertilizer Recommendation - Farmers Connect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <div class="crop-suggestion-form">
+
+            <h2>🌾 Fertilizer Recommendation System</h2>
+            <p>Enter soil, crop, and weather details to get fertilizer recommendation.</p>
+
+            <div class="form-row">
+                <label>Soil Type:
+                    <select id="soilType">
+                        <option value="">Select Soil</option>
+                        <option value="Loamy">Loamy</option>
+                        <option value="Clay">Clay</option>
+                        <option value="Sandy">Sandy</option>
+                        <option value="Black">Black</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </label>
+
+                <label>Soil pH:
+                    <input type="number" id="ph" step="0.1" placeholder="e.g., 6.5">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>Nitrogen (N):
+                    <input type="number" id="nitrogen" placeholder="e.g., 80">
+                </label>
+
+                <label>Phosphorus (P):
+                    <input type="number" id="phosphorus" placeholder="e.g., 40">
+                </label>
+
+                <label>Potassium (K):
+                    <input type="number" id="potassium" placeholder="e.g., 30">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>Temperature (°C):
+                    <input type="number" id="temperature" step="0.1" placeholder="e.g., 25">
+                </label>
+
+                <label>Humidity (%):
+                    <input type="number" id="humidity" step="0.1" placeholder="e.g., 70">
+                </label>
+
+                <label>Rainfall (mm):
+                    <input type="number" id="rainfall" step="0.1" placeholder="e.g., 120">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>Crop Type:
+                    <select id="cropType">
+                        <option value="">Select Crop</option>
+                        <option value="Cotton">Cotton</option>
+                        <option value="Maize">Maize</option>
+                        <option value="Wheat">Wheat</option>
+                        <option value="Rice">Rice</option>
+                        <option value="Potato">Potato</option>
+                        <option value="Sugarcane">Sugarcane</option>
+                        <option value="Tomato">Tomato</option>
+                    </select>
+                </label>
+
+                <label>Growth Stage:
+                    <select id="growthStage">
+                        <option value="Sowing">Sowing</option>
+                        <option value="Vegetative">Vegetative</option>
+                        <option value="Flowering">Flowering</option>
+                        <option value="Harvest">Harvest</option>
+                    </select>
+                </label>
+
+                <label>Season:
+                    <select id="season">
+                        <option value="Kharif">Kharif</option>
+                        <option value="Rabi">Rabi</option>
+                        <option value="Zaid">Zaid</option>
+                    </select>
+                </label>
+            </div>
+
+            <div style="text-align: center; margin-top: 20px;">
+                <button onclick="recommendFertilizer()">Recommend Fertilizer</button>
+            </div>
+
+            <div id="fertilizer-result" class="hidden">
+                <h4>Recommended Fertilizer:</h4>
+                <p id="fertilizer-output"></p>
+
+                <h4>Dosage:</h4>
+                <p id="dosage-output"></p>
+            </div>
+
+        </div>
+
+        <div class="back-button" style="text-align: center; margin-top: 20px;">
+            <a href="farmer-dashboard.html"><button>Back to Dashboard</button></a>
+        </div>
+
+    </div>
+
+    <script src="f_script.js"></script>
+
+</body>
+</html>
